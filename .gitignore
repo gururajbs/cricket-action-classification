@@ -1,0 +1,77 @@
+# Model weights and large files
+*.pt
+*.pth
+*.weights
+*.onnx
+*.engine
+*.mlmodel
+*.tflite
+*.h5
+
+# Training runs and logs
+runs/
+model/runs/
+*.log
+events.out.tfevents.*
+
+# Cache files
+*.cache
+train.cache
+val.cache
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Dataset cache
+dataset/*.cache
+
+# Output videos (can be large)
+output_videos/
+*.mp4
+
+# Large test dataset (exclude to keep repo small)
+test_model/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+.venv/
+venv/
+env/
+
+# Large model files (already in main .gitignore but being explicit)
+yolov8n.pt
+model/runs/classify/*/weights/*.pt
+
+# Prediction outputs (can be regenerated)
+model/predictions/
+
+# Training artifacts (can be regenerated)
+model/runs/classify/*/confusion_matrix*.png
+model/runs/classify/*/results.png
+model/runs/classify/*/val_batch*.jpg
+model/runs/classify/*/train_batch*.jpg
+model/runs/classify/*/results.csv 
